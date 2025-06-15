@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Paws Pet Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Prompt: Header with navigation -->
+  <header>
+    <h1>Happy Paws Pet Store</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#pets">Pets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Prompt: Main content with welcome section -->
+  <main>
+    <section id="home" class="welcome">
+      <h2>Welcome to Happy Paws!</h2>
+      <p>Your new best friend is waiting.</p>
+      <img src="img/dogs/dog01.jpg" alt="Cute Dog" />
+      <button onclick="adoptPet()">Adopt Now</button>
+    </section>
+
+    <!-- Prompt: Pets section, loaded dynamically -->
+    <section id="pets">
+      <h2>Our Lovely Pets</h2>
+      <div id="pet-list" class="pet-grid">
+        <!-- Pets will be inserted by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Prompt: Footer with contact and map -->
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <address>
+        Happy Paws Pet Store<br>
+        123 Bark Street, Sydney, NSW 2000, Australia<br>
+        Phone: +61 2 1234 5678<br>
+        Email: contact@happypaws.au
+      </address>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.8765807404976!2d151.20929541520928!3d-33.8688199806556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3cb7f77f77%3A0x2fc2d7b7bbd4a89f!2sSydney%20Opera%20House!5e0!3m2!1sen!2sau!4v1600000000000!5m2!1sen!2sau" 
+        width="300" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </div>
+  </footer>
+</body>
+</html>
