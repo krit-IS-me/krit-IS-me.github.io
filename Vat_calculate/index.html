@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VAT Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { display: flex; gap: 40px; }
+        .box { border: 1px solid #ccc; padding: 24px; border-radius: 8px; width: 320px; }
+        label { display: block; margin-top: 12px; }
+        input[type="number"] { width: 100%; padding: 6px; margin-top: 4px; }
+        .result { margin-top: 16px; font-weight: bold; }
+        h2 { margin-top: 0; }
+    </style>
+</head>
+<body>
+    <h1>VAT Calculator</h1>
+    <div class="container">
+        <!-- Box 1: Calculate VAT from base price -->
+        <div class="box">
+            <h2>VAT Calculation</h2>
+            <label>
+                Base Price (Excluding VAT):
+                <input type="number" id="basePrice" min="0" step="1">
+            </label>
+            <label>
+                VAT Rate (%):
+                <input type="number" id="vatRate" min="0" step="1">
+            </label>
+            <button onclick="calculateVAT()">Calculate</button>
+            <div class="result" id="vatResult"></div>
+        </div>
+        <!-- Box 2: Reverse VAT calculation -->
+        <div class="box">
+            <h2>Reverse VAT Calculation</h2>
+            <label>
+                Total Price (Including VAT):
+                <input type="number" id="totalPrice" min="0" step="1">
+            </label>
+            <label>
+                VAT Rate (%):
+                <input type="number" id="reverseVatRate" min="0" step="1">
+            </label>
+            <button onclick="reverseVAT()">Calculate</button>
+            <div class="result" id="reverseVatResult"></div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>

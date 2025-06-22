@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pets - Happy Paws Pet Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Happy Paws Pet Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pets.html">Pets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pets">
+      <h2>Our Lovely Pets</h2>
+      
+      <div class="filter-container">
+        <label for="pet-type-filter">Filter by Pet Type:</label>
+        <select id="pet-type-filter" onchange="filterPets()">
+          <option value="all">All Pets</option>
+          <option value="dog">Dogs</option>
+          <option value="cat">Cats</option>
+          <option value="bird">Birds</option>
+          <option value="capybara">Capybara</option>
+        </select>
+      </div>
+
+      <div id="pet-list" class="pet-grid">
+        <!-- Pets will be inserted by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Happy Paws Pet Store. All rights reserved.</p>
+  </footer>
+</body>
+</html> 
