@@ -1,0 +1,1 @@
+.modal-overlay{opacity:0;transition:opacity .3s ease;pointer-events:none}.modal-overlay.show{opacity:1;pointer-events:auto}.modal-content{transform:translateY(-20px);opacity:0;transition:all .3s ease}.modal-content.show{transform:translateY(0);opacity:1}body{font-family:Arial,sans-serif;padding:20px}
